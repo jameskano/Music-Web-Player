@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Music Web Player</title>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/0fa68b04a7.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="CSS/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">My Playlist</h1>
+
+      <div class="player">
+        <div class="music-info" id="music-info">
+          <p class="song"></p>
+          <div class="progress-container" id="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+        </div>
+
+        <audio src=""></audio>
+
+        <img class="song-img rotate" id="song-img" src="" alt="">
+
+        <div class="buttons">
+          <i class="fas fa-backward button" id="prev"></i>
+          <i class="fas fa-play button" id="play"></i>
+          <i class="fas fa-forward button" id="next"></i>
+          <i class="fas fa-volume-up button" id="volume-button"></i>
+        </div>
+
+        <div class="volume-container" id="volume-container">
+          <div class="volume" id="volume">
+            <div class="volume-bar" id="volume-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
