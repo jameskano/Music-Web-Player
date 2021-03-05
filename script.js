@@ -156,8 +156,8 @@ window.addEventListener("keydown", function(e) {
 
 
 // Show-hide volume
-volumeButton.addEventListener("click", function() {
-  volumeContainer.classList.toggle("show-volume");
+volumeButton.addEventListener("mouseover", function() {
+  volumeContainer.classList.add("show-volume");
 });
 
 window.addEventListener("click", function(e) {
@@ -190,4 +190,18 @@ volume.addEventListener('mousemove',function(e){
 });
 document.addEventListener('mouseup',function(e){
  drag = false;
+});
+
+// Mute
+volumeButton.addEventListener("click", function() {
+  if(audio.muted === false) {
+    audio.muted = true;
+
+    volumeBar.style.height = "0%";
+  }
+  else {
+    audio.muted = false;
+
+    volumeBar.style.height = audio.volume * 100 + "%";
+  }
 });
