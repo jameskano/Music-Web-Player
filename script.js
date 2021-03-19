@@ -205,3 +205,4 @@ volumeButton.addEventListener("click", function() {
     volumeBar.style.height = audio.volume * 100 + "%";
   }
 });
+
